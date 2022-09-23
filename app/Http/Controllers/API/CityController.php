@@ -42,7 +42,7 @@ class CityController extends BaseController
                 'longitude' => $input['longitude']
             ]);
 
-            return $this->sendResponse(new CityResource($newCity),__('messages.city.create.success'));
+            return $this->sendResponse(new CityResource($newCity),__('messages.city.create.success'),201);
         }catch (ModelNotFoundException $exception){
             return $this->sendError(__('messages.city.create.error'),'',400);
         }
