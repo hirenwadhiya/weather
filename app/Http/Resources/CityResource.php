@@ -19,7 +19,8 @@ class CityResource extends JsonResource
             'name'      => $this->name,
             'slug'      => $this->slug,
             'latitude'  => $this->latitude,
-            'longitude' => $this->longitude
+            'longitude' => $this->longitude,
+            'weather'   => $this->weather
         ];
     }
 }
