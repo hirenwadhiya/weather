@@ -9,6 +9,7 @@ Weather App is a collection of APIs to list all cities with 5 days weather data,
 - Create environment file from demo file: `cp .env.example .env`
 - Update `WEATHER_APP_KEY` in the .env file
 - Create a database and fill the correct DB credentials in the .env file
+- Generate app key: `php artisan key:generate`
 - Install packages by: `composer install`
 - Run migration by: `php artisan migrate`
 
